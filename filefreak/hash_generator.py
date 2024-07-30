@@ -1,13 +1,4 @@
 import hashlib
-import os.path
-
-# def fetch_files(directory):
-#     fp = []
-#     for root, dirs, files in os.walk(directory):
-#         for file in files:
-#             file_path = os.path.join(root, file)
-#             fp.append(file_path)
-#     return fp
 
 def generate_hash(file_path, output_file, algorithm='sha1'):
     hash_func = hashlib.new(algorithm)
